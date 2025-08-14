@@ -11,3 +11,26 @@ import Hamburger from './Hamburger.astro';
         <Navigation />
     </nav>
 </header>
+<style>
+header {
+    border: 1px solid red;
+    display: flex;
+}
+.Logo {
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+.Logo p {
+    font-size: 20px;
+    line-height: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+header nav {
+    border: 1px solid black;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+</style>
