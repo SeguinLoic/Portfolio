@@ -4,7 +4,7 @@ import Hamburger from './Hamburger.astro';
 ---
 <header>
     <div class="Logo">
-        <p>Loïc S.</p>
+        <a href="/">Loïc S.</a>
     </div>
     <nav>
         <Hamburger />
@@ -15,6 +15,7 @@ import Hamburger from './Hamburger.astro';
 header {
     display: flex;
     position: relative;
+    padding: 10px 0px;
 }
 header:after {
     content: '';
@@ -37,10 +38,11 @@ header nav {
     align-items: center;
     padding: 0px 8px;
 }
-.Logo p {
+.Logo a {
     font-size: 20px;
     line-height: 1px;
     font-weight: 600;
     font-family: sans-serif;
+    text-decoration: none;
 }
 </style>
