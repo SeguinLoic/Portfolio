@@ -1,6 +1,22 @@
 ---
 const {url, title, date} = Astro.props;
 ---
+
+<style>
+ul.listShortPost .shortPost a p {
+    margin: 0px;
+}
+ul.listShortPost .shortPost a {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+    position: relative;
+}
+ul.listShortPost .shortPost {
+    display: flex;
+}
+</style>
+
 <li class="shortPost">
     <a href={url}>
         <p>{title}</p>

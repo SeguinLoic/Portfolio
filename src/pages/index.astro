@@ -8,6 +8,15 @@ const pageTitle = "Home page";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
+<style>
+ul.listShortPost {
+    border: 1px solid red;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+</style>
+
 <BaseLayout pageTitle={pageTitle}>
   <TitleSection title={"Latest projects"} />
   <TitleSection title={"My thougts"} />
