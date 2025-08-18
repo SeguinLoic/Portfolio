@@ -4,6 +4,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import TitleSection from '../components/TitleSection.astro';
 import ShortBlogPost from '../components/ShortBlogPost.astro';
 
+import { Debug } from 'astro:components';
+
 const pageTitle = "Home page";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
@@ -14,8 +16,5 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
   <!--<ul>
       {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul> -->
+  <Debug {allPosts};
 </BaseLayout>
-
-<script>
-  console.log(allPosts);
-</script>
