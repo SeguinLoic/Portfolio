@@ -12,6 +12,6 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
   <TitleSection title={"Latest projects"} />
   <TitleSection title={"My thougts"} />
   <ul>
-      {allPosts.map((post: any) => <ShortBlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} />)}
+      {allPosts.map((post: any, index) => index < 3 && <ShortBlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} />)}
   </ul>
 </BaseLayout>
