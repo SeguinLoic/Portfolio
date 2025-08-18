@@ -2,11 +2,20 @@
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TitleSection from '../components/TitleSection.astro';
+import ShortBlogPost from '../components/ShortBlogPost.astro';
 
 const pageTitle = "Home page";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <TitleSection title={"Latest projects"} />
   <TitleSection title={"My thougts"} />
+  <!--<ul>
+      {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+  </ul> -->
 </BaseLayout>
+
+<script>
+  console.log(allPosts);
+</script>
