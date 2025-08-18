@@ -14,6 +14,18 @@ import Hamburger from './Hamburger.astro';
 <style>
 header {
     display: flex;
+    position: relative;
+}
+header:after {
+    content: '';
+    width: 100vW;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 header nav {
     display: flex;
