@@ -1,9 +1,8 @@
 ---
-const {url, title, date, type} = Astro.props;
+const {url, title, date} = Astro.props;
 ---
 <li class="shortPost">
     <a href={url}>
-        <p>{type}</p>
         <p>{title}</p>
         <p>{date}</p>
     </a>
