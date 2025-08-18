@@ -30,10 +30,16 @@ const {url, title, date, category} = Astro.props;
 .shortPost a .title {
     display: flex;
     flex-grow: 1;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 .shortPost a p {
     margin: 0px;
+}
+.shortPost .containerCategory {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95px;
 }
 .shortPost a .category {
     border: 1px solid #353535;
