@@ -24,7 +24,7 @@ const {url, title, date, category} = Astro.props;
     bottom: 0;
     left: 0;
 }
-.shortPost a:hover {
+.shortPost a:hover .title {
     text-decoration: underline !important;
 }
 .shortPost a .title {
@@ -39,7 +39,7 @@ const {url, title, date, category} = Astro.props;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 95px;
+    width: 80px;
 }
 .shortPost a .category {
     border: 1px solid #353535;
