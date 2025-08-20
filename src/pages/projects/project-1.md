@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/ProjectPostLayout.astro
 title: 'Tirajosor'
 pubDate: 14/10/2024
 description: 'This is the first post of my new Astro blog.'
