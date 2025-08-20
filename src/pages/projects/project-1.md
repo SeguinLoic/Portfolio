@@ -10,6 +10,8 @@ tags: ["astro", "blogging", "learning in public"]
 category: 'Digital'
 ---
 
+![A starry night sky.](../../assets/tirajosor.png)
+
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
