@@ -7,21 +7,25 @@ import Social from './Social.astro';
     display: flex;
     gap: 1rem;
     padding: 20px 0px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
   }
-  .contactZone {
+  footer .container {
     display: flex;
   }
-  .contactZone .name {
+  footer .container .name {
     margin: 0px;
+  }
+  footer .container .social {
+    display: flex;
   }
 </style>
 
 <footer>
-  <div class="contactZone">
+  <div class="container">
     <p class="name">Loïc Seguin</p>
-    <Social platform="dribbble" username="Loic_Seguin" />
-    <Social platform="github" username="SeguinLoic" />
+    <div class="social">
+      <Social platform="dribbble" username="Loic_Seguin" />
+      <Social platform="github" username="SeguinLoic" />
+    </div>
   </div>
 </footer>
