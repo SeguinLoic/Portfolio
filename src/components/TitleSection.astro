@@ -2,11 +2,10 @@
 const { title } = Astro.props
 ---
 
-<h2 class="titleSection">{title}</h2>
-
-<style is:global>
+<style>
     h2.titleSection {
         font-size: 1.1em;
-        font-family: "Inter", sans-serif;
     }
 </style>
+
+<h2 class="titleSection">{title}</h2>
