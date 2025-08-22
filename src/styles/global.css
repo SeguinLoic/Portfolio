@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter_18pt-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   background-color: #fff;
-  font-family: sans-serif;
 }
 
 body {
@@ -21,6 +28,7 @@ main {
 
 * {
   box-sizing: border-box;
+  font-family: Inter;
 }
 
 h1 {
