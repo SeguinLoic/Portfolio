@@ -2,6 +2,43 @@
 import Navigation from './Navigation.astro';
 import Hamburger from './Hamburger.astro';
 ---
+
+<style>
+    header {
+        display: flex;
+        position: relative;
+        padding: 30px 0px 10px;
+    }
+    header:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        opacity: .2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    header nav {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    .Logo {
+        display: flex;
+        align-items: center;
+    }
+    .Logo a {
+        font-size: 20px;
+        line-height: 1px;
+        font-weight: 600;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+
 <header>
     <div class="Logo">
         <a href="/">Loïc S.</a>
@@ -11,38 +48,3 @@ import Hamburger from './Hamburger.astro';
         <Navigation />
     </nav>
 </header>
-<style>
-header {
-    display: flex;
-    position: relative;
-    padding: 30px 0px 10px;
-}
-header:after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    opacity: .2;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-}
-header nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-.Logo {
-    display: flex;
-    align-items: center;
-}
-.Logo a {
-    font-size: 20px;
-    line-height: 1px;
-    font-weight: 600;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #000;
-}
-</style>

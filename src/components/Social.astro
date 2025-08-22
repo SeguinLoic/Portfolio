@@ -3,15 +3,15 @@ const { platform, username } = Astro.props;
 ---
 
 <style>
-a.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 3px;
-}
-a.icon img {
-    width: 19px;
-}
+    a.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 3px;
+    }
+    a.icon img {
+        width: 19px;
+    }
 </style>
 
-<a class="icon" href={`https://www.${platform}.com/${username}`}><img src={`/${platform}.svg`}/></a>
+<a class={`icon icon-${platform}`} href={`https://www.${platform}.com/${username}`}><img src={`/${platform}.svg`}/></a>
