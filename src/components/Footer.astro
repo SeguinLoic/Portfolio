@@ -12,11 +12,35 @@ import Social from './Social.astro';
   footer .container {
     display: flex;
     width: 100%;
-}
-  footer .container .name {
+  }
+  footer .container .introduction {
     display: flex;
+    flex-grow: 1;
+  }
+  footer .container .introduction p {
     margin: 0px;
-    width: 100%;
+  }
+  footer .container .introduction p.name {
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+  }
+  footer .container .introduction p.name:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 10px;
+    opacity: 0.25;
+  }
+  footer .container .introduction p.sentence {
+    display: flex;
+    font-style: italic;
+    font-size: 0.87em;
+    line-height: 0.87em;
+    align-items: center;
   }
   footer .container .social {
     display: flex;
