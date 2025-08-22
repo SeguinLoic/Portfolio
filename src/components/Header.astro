@@ -27,14 +27,19 @@ import Hamburger from './Hamburger.astro';
     }
     .Logo {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
     }
     .Logo a {
         font-size: 20px;
-        line-height: 1px;
+        line-height: 1em;
         font-weight: 600;
         text-decoration: none;
         color: #000;
+    }
+    .Logo p {
+        margin: 0px;
     }
 </style>
 
