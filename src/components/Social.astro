@@ -10,8 +10,11 @@ const { platform, username } = Astro.props;
         margin: 0px 3px;
     }
     a.icon img {
-        width: 19px;
+        width: 20px;
     }
+    a.icon.icon-dribbble img {
+        width: 18px !important;
+}
 </style>
 
 <a class={`icon icon-${platform}`} href={`https://www.${platform}.com/${username}`}><img src={`/${platform}.svg`}/></a>
