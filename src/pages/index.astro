@@ -19,7 +19,7 @@ const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: t
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-  <p class="about">Hi, I'm Loïc. Webdesigner since 2016, i like all kind of art and especially Digital Art. I really love bouldering with friends, mostly for the fresh cold beer after the session. I just discover that i love writing.</p>
+  <p class="about">Hi, I'm Loïc. Webdesigner since 2016, I like all kind of art and especially Digital Art. I really love bouldering with friends, mostly for the fresh cold beer after the session. I just discovered that i love writing.</p>
   <TitleSection title={"Latest projects"} />
   <ul class="listShortProject">
     {allProjects.map((project: any) => <ShortProject url={project.url} title={project.frontmatter.title} image={project.frontmatter.image.url} />)}
