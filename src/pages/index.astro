@@ -2,11 +2,9 @@
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TitleSection from '../components/TitleSection.astro';
-import ShortBlogPost from '../components/ShortBlogPost.astro';
 import ShortProject from '../components/ShortProject.astro';
 
 const pageTitle = "Home page";
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
 ---
 
@@ -34,8 +32,4 @@ const allProjects = Object.values(import.meta.glob('./projects/*.md', { eager: t
     {allProjects.map((project: any) => <ShortProject url={project.url} title={project.frontmatter.title} image={project.frontmatter.image.url} />)}
   </ul>
   <TitleSection title={"Resume"} />
-  <TitleSection title={"My thougts"} />
-  <ul class="listShortPost">
-      {allPosts.map((post: any, index) => index < 3 && <ShortBlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} category={post.frontmatter.category} />)}
-  </ul>
 </BaseLayout>

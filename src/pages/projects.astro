@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogPost from '../components/BlogPost.astro';
+import ShortProject from '../components/ShortProject.astro';
 
 const pageTitle = "About Me";
 const allPosts = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
@@ -9,6 +9,6 @@ const allPosts = Object.values(import.meta.glob('./projects/*.md', { eager: true
 
   <BaseLayout pageTitle={pageTitle}>
     <ul>
-        {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+        {allPosts.map((post: any) => <ShortProject url={post.url} title={post.frontmatter.title} />)}
     </ul>
   </BaseLayout>
